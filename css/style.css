@@ -1,7 +1,59 @@
-body {
-    background-color: forestgreen;
-    font-family: Verdana, serif;
-}
+/*colorpallet:
+    #0b0c10
+    #1f2833 background
+    #c5c6c7
+    #66fcf1
+    #45a29e background
+*/
 h1 {
-    font-weight: bold;
+    color: darkgreen;
+    grid-area: h1;
+}
+h2 {
+    color: darkolivegreen;
+    grid-area: h2;
+}
+#right h2 {
+    color: darkseagreen;
+}
+i {
+    color: darkseagreen;
+    height: 50px;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #0b0c10;
+    font-family: Bahnschrift, sans-serif;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    display: grid;
+    padding: 0;
+    margin: 0;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 100%;
+    grid-template-areas:
+            "left right";
+}
+#left {
+    background-color: darkseagreen;
+    grid-area: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right {
+    background-color: forestgreen;
+    grid-area: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    display: unset;
+    justify-self: center;
+    align-self: center;
 }
